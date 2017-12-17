@@ -1,3 +1,18 @@
 ####################################
 #########Git Cheat Sheet############
 ####################################
+
+**changing of -global properties**
+git config --global user.name "John Doe"
+git config --global user.email "john.doe@example.com"
+git config --global core.editor C:\emacs\bin\runemacs.exe -wl1
+git config --list - show all properties of the global config
+git config <property name> - show value of specified property
+
+**help**
+git help <name>
+git <name> --help
+man git-<name>
+
+
+
