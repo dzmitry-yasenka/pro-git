@@ -54,6 +54,9 @@ git log -grep
 git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
 
 git commit --amend - revert the last commit
+git reset HEAD CONTRIBUTING.md - used to unstage changes
+git checkout -- CONTRIBUTING.md - to discard changes in working directory
+
 
 
 
