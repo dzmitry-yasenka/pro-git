@@ -57,7 +57,7 @@ git commit --amend - revert the last commit
 git reset HEAD CONTRIBUTING.md - used to unstage changes
 git checkout -- CONTRIBUTING.md - to discard changes in working directory
 
-
+commit in order to test new git settings
 
 
 
