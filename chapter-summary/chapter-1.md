@@ -21,7 +21,7 @@ pros:
 - each user receive full copy of repository (not only snapshot)
 - possible to have more ways of collaboration between different groups of people
 
-## Some of the goals of Git  were as follows:
+## Some of the goals of Git  were as follows
 
 - Speed
 - Simple design
