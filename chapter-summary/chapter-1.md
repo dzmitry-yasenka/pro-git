@@ -6,7 +6,7 @@ pros:
 
 - help to collaborate with developers
 - help to solve administrative questions
-- developers know what everyone else on the project is doing
+- developers know what everyone on the project is doing
 
 cons:
 
