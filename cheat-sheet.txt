@@ -53,9 +53,21 @@ git log -Sfunction_name - search for all commits where was added particular stri
 git log -grep
 git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
 
+**discard changes**
 git commit --amend - revert the last commit
 git reset HEAD CONTRIBUTING.md - used to unstage changes
 git checkout -- CONTRIBUTING.md - to discard changes in working directory
+
+**work with remote repositories**
+git remote - shows the list of remote repositories
+git remote -v - shows addresses for the list of remote repositories
+git remote add <short-name> <url> - add a new remote repository
+git fetch <remote-repository> - get changes from <remote-repository>
+git push <remote-repository> - push changes to <remote-repository>
+git push <remote-repository> <branch> - push changes of <branch> to <remote-repository>
+git remote show <remote-repository> - show more information about remote repository
+git remote rename <old-name> <new-name> - change the name of the remote repository
+git remote rm <remote-repository> - remote the remote repository from the list
 
 
 
