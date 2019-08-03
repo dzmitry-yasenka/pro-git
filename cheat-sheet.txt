@@ -69,5 +69,11 @@ git remote show <remote-repository> - show more information about remote reposit
 git remote rename <old-name> <new-name> - change the name of the remote repository
 git remote rm <remote-repository> - remote the remote repository from the list
 
-
+**tags commands**
+git tag -a <tag-name> -m "some-message" - add annotated tag
+git tag - return the list of the tags
+git show <tag-name> - show information about tag/commit
+git tag -a <tag-name> <commit-hash> - create tag associated with old commit
+git push origin --tags - push tags to the remote repository
+git checkout -b <new-branch-name> <tag-name> - create new branch from tag
 
