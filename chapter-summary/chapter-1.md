@@ -28,3 +28,17 @@ pros:
 - Strong support for non-linear development (thousands of parallel branches)
 - Fully distributed
 - Able to handle large projects like the Linux kernel efficiently (speed and data size)
+
+## Introduction - Git Foundations
+
+Git uses completely different approach of managing revisions. Git preferes to work with snapshots of work directory [(Snapshots Approach)](https://git-scm.com/book/en/v2/images/snapshots.png) instead of classical approach of saving diffs between revisions [(Diffs Approach)](https://git-scm.com/book/en/v2/images/deltas.png).
+
+Another important feature that inherited by design is to be able to function locally for most of the use cases.
+
+Git uses SHA-1 hash for checksums and changes detection.
+
+When you work with Git files might be in one of the three states [File states in Git](https://git-scm.com/book/en/v2/images/areas.png):
+
+- commited (already saved in local db)
+- modified (changed but not saved yet)
+- staged (will be included in the next commit)
