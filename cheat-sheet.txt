@@ -3,11 +3,11 @@
 ####################################
 
 **changing of -global properties**
-git config --global user.name "John Doe"
-git config --global user.email "john.doe@example.com"
-git config --global core.editor "code.exe --wait"
-git config --list - show all properties of the global config
-git config <property name> - show value of specified property
+git config --global user.name "John Doe" --- check the user name in global config
+git config --global user.email "john.doe@example.com" --- check user email in global config
+git config --global core.editor "code.exe --wait" --- set editor in global config
+git config --list --- show all properties of the global config
+git config <property name> --- show value of specified property
 
 **help**
 git help <name>
