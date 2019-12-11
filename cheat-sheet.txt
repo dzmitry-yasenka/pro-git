@@ -5,7 +5,7 @@
 **changing of -global properties**
 git config --global user.name "John Doe"
 git config --global user.email "john.doe@example.com"
-git config --global core.editor C:\emacs\bin\runemacs.exe -wl1
+git config --global core.editor "code.exe --wait"
 git config --list - show all properties of the global config
 git config <property name> - show value of specified property
 
