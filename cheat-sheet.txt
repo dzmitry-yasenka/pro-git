@@ -15,65 +15,65 @@ git <name> --help
 man git-<name>
 
 **creating git repository**
-git init - create a new repository in the current folder
-git clone <url> - clone full copy of the repository
-git clone <url> <folder-name> - the same operation with ability to specify the folder name
-git clone user@server:path/to/repo.git - the same but with different transport protocol
+git init --- create a new repository in the current folder
+git clone <url> --- clone full copy of the repository
+git clone <url> <folder-name> --- the same operation with ability to specify the folder name
+git clone user@server:path/to/repo.git --- the same but with different transport protocol
 
 **writing changes to the repository**
-git add - add files to the stage area
-git commit -m "some message" - commit changes to the repository
-git commit - a -m "some message" - add to the stage area tracked files and commit them
+git add --- add files to the stage area
+git commit -m "some message" --- commit changes to the repository
+git commit - a -m "some message" --- add to the stage area tracked files and commit them
 
 **status of the files**
-git status - get status of the all files under working directory
-git status -s or --short - short output for statuses of the files
-git diff - changes without indexing
-git diff --staged - comparison of staged and commited data
+git status --- get status of the all files under working directory
+git status -s or --short --- short output for statuses of the files
+git diff --- changes without indexing
+git diff --staged --- comparison of staged and commited data
 
 **removing files**
-git rm <something> - removing elements from the repository(work directory and index)
-git rm -f <> - if required to remove something that has been already staged
-git rm --cached <something> - remove from the index(in case of adding some compiled files)
+git rm <something> --- removing elements from the repository(work directory and index)
+git rm -f <> --- if required to remove something that has been already staged
+git rm --cached <something> --- remove from the index(in case of adding some compiled files)
 
 **moving the files**
-git mv file_from file_to - renaming of the file
+git mv file_from file_to --- renaming of the file
 
 **history of commits**
-git log - history of commits
-git log -p -2 - show defails of the two last commits
-git log --stat - show commits with stats
+git log --- history of commits
+git log -p -2 --- show defails of the two last commits
+git log --stat --- show commits with stats
 git log --pretty=oneline
 git log --short or --full or --fuller
 git log --pretty=format:"%h - %an, %ar : %s"
 git log --graph
 git log --since=2.weeks or --after or --until or --before
 git log --author="<author>"
-git log -Sfunction_name - search for all commits where was added particular string
+git log -Sfunction_name --- search for all commits where was added particular string
 git log -grep
 git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
 
 **discard changes**
-git commit --amend - revert the last commit
-git reset HEAD CONTRIBUTING.md - used to unstage changes
-git checkout -- CONTRIBUTING.md - to discard changes in working directory
+git commit --amend --- revert the last commit
+git reset HEAD CONTRIBUTING.md --- used to unstage changes
+git checkout -- CONTRIBUTING.md --- to discard changes in working directory
 
 **work with remote repositories**
-git remote - shows the list of remote repositories
-git remote -v - shows addresses for the list of remote repositories
-git remote add <short-name> <url> - add a new remote repository
-git fetch <remote-repository> - get changes from <remote-repository>
-git push <remote-repository> - push changes to <remote-repository>
-git push <remote-repository> <branch> - push changes of <branch> to <remote-repository>
-git remote show <remote-repository> - show more information about remote repository
-git remote rename <old-name> <new-name> - change the name of the remote repository
-git remote rm <remote-repository> - remote the remote repository from the list
+git remote --- shows the list of remote repositories
+git remote -v --- shows addresses for the list of remote repositories
+git remote add <short-name> <url> --- add a new remote repository
+git fetch <remote-repository> --- get changes from <remote-repository>
+git push <remote-repository> --- push changes to <remote-repository>
+git push <remote-repository> <branch> --- push changes of <branch> to <remote-repository>
+git remote show <remote-repository> --- show more information about remote repository
+git remote rename <old-name> <new-name> --- change the name of the remote repository
+git remote rm <remote-repository> --- remote the remote repository from the list
 
 **tags commands**
-git tag -a <tag-name> -m "some-message" - add annotated tag
-git tag - return the list of the tags
-git show <tag-name> - show information about tag/commit
-git tag -a <tag-name> <commit-hash> - create tag associated with old commit
-git push origin --tags - push tags to the remote repository
-git checkout -b <new-branch-name> <tag-name> - create new branch from tag
+git tag -a <tag-name> -m "some-message" --- add annotated tag
+git tag --- return the list of the tags
+git show <tag-name> --- show information about tag/commit
+git tag -a <tag-name> <commit-hash> --- create tag associated with old commit
+git push origin --tags --- push tags to the remote repository
+git checkout -b <new-branch-name> <tag-name> --- create new branch from tag
 
