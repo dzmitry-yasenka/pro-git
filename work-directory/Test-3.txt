@@ -1,4 +1,5 @@
 hotfix
 applied
+hotfix-2 applied
 feature-1 (first half)
 feature-2 (second half)
