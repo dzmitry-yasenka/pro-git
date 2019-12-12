@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 somechange in master
-=======
 commit in testing branch
->>>>>>> testing
