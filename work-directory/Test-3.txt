@@ -3,3 +3,4 @@ applied
 feature-1 (first half)
 feature-1 (second half)
 feature-2 (frist half)
+feature-2 (second half)
