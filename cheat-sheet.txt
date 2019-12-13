@@ -77,3 +77,18 @@ git tag -a <tag-name> <commit-hash> --- create tag associated with old commit
 git push origin --tags --- push tags to the remote repository
 git checkout -b <new-branch-name> <tag-name> --- create new branch from tag
 
+**branching**
+git branch <branch-name> --- create a branch
+git checkout <branch-name> --- switch to a branch
+git checkout -b <branch-name> --- create and switch to a branch
+git merge <branch-name> --- merge <branch-name> with active now
+git branch -d <branch-name> --- delete a branch
+git branch -D <branch-name> --- delete even if branch wasn't merged
+git branch --- show list of branches
+git branch -v --- show list of branches with last commits
+git branch --merged --- show list of merged branches
+git branch --no-merged --- show list of not merged branches
+git branch -vv --- show list of branches with commits and remote repositories distances
+git push origin --delete <branch> --- remove branch from remote repository
+git rebase <branch> --- rebasing for flat merges model
+
