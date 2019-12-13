@@ -90,4 +90,5 @@ git branch --merged --- show list of merged branches
 git branch --no-merged --- show list of not merged branches
 git branch -vv --- show list of branches with commits and remote repositories distances
 git push origin --delete <branch> --- remove branch from remote repository
+git rebase <branch> --- rebasing for flat merges model
 
