@@ -77,3 +77,9 @@ git tag -a <tag-name> <commit-hash> --- create tag associated with old commit
 git push origin --tags --- push tags to the remote repository
 git checkout -b <new-branch-name> <tag-name> --- create new branch from tag
 
+**branching**
+git branch <branch-name> --- create a branch
+git checkout <branch-name> --- switch to a branch
+
+
+
