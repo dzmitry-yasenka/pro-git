@@ -84,4 +84,8 @@ git checkout -b <branch-name> --- create and switch to a branch
 git merge <branch-name> --- merge <branch-name> with active now
 git branch -d <branch-name> --- delete a branch
 git branch -D <branch-name> --- delete even if branch wasn't merged
+git branch --- show list of branches
+git branch -v --- show list of branches with last commits
+git branch --merged --- show list of merged branches
+git branch --no-merged --- show list of not merged branches
 
